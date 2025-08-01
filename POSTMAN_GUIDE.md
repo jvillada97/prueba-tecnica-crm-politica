@@ -15,9 +15,13 @@ chmod +x run_server.sh
 /Users/jcvillada/Documents/crm-politica/prueba-tecnica-crm-politica/venv/bin/python main.py
 ```
 
-### 2. **Token JWT Actual**
+### 2. **Token JWT**
 ```
-Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDM3NzB9.7muc2Psa2hSxwIr1-53Hfj4tHUoMOIUbs0hQwa4pak4
+# Generar un token válido:
+python generate_test_token.py
+
+# Ejemplo de formato:
+Bearer YOUR_GENERATED_JWT_TOKEN_HERE
 ```
 
 ---
@@ -75,7 +79,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwi
 
 **Headers requeridos:**
 ```
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDM3NzB9.7muc2Psa2hSxwIr1-53Hfj4tHUoMOIUbs0hQwa4pak4
+Authorization: Bearer YOUR_GENERATED_JWT_TOKEN_HERE
 
 X-Session-ID: test-session-12345
 
@@ -149,7 +153,7 @@ Content-Type: application/json
 1. Crear nuevo Environment llamado "CRM Político Local"
 2. Agregar variables:
    - `base_url`: `http://localhost:8000`
-   - `jwt_token`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDM3NzB9.7muc2Psa2hSxwIr1-53Hfj4tHUoMOIUbs0hQwa4pak4`
+   - `jwt_token`: `YOUR_GENERATED_JWT_TOKEN_HERE`
    - `session_id`: `test-session-12345`
 
 ### **Paso 3: Probar Endpoints**

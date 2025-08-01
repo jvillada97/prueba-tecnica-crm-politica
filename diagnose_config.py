@@ -25,8 +25,10 @@ def main():
     print(f"   Firestore Project: {settings.firestore_project_id}")
     print(f"   Firestore Credentials: {settings.firestore_credentials_path}")
     
-    # Probar token actual
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDY0MDN9.elL38WwPaASdkcFhHAZbWYa1X0V5ccOsuYJZWTzBZ7c"
+    # Token removido por seguridad - usar generate_test_token.py
+    print(f"\n❌ TOKEN REMOVIDO POR SEGURIDAD")
+    print(f"   Usa 'python generate_test_token.py' para generar un token válido")
+    return
     
     print(f"\n🧪 PRUEBA DE TOKEN:")
     try:

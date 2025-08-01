@@ -5,7 +5,7 @@
 ### ✅ CURL QUE FUNCIONA:
 ```bash
 curl -X GET "http://localhost:8000/api/v1/analytics/user-stats" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDY0MDN9.elL38WwPaASdkcFhHAZbWYa1X0V5ccOsuYJZWTzBZ7c" \
+     -H "Authorization: Bearer YOUR_GENERATED_JWT_TOKEN_HERE" \
      -H "x-session-id: test-session-12345" \
      -H "Content-Type: application/json"
 ```
@@ -28,7 +28,7 @@ curl -X GET "http://localhost:8000/api/v1/analytics/user-stats" \
 
 2. **Agregar Headers exactos:**
    ```
-   Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDY0MDN9.elL38WwPaASdkcFhHAZbWYa1X0V5ccOsuYJZWTzBZ7c
+   Authorization: Bearer YOUR_GENERATED_JWT_TOKEN_HERE
    
    x-session-id: test-session-12345
    
@@ -42,7 +42,7 @@ Si usas la colección original:
 1. **Ir a**: Collection → Variables
 2. **Verificar**:
    - `base_url`: `http://localhost:8000`
-   - `jwt_token`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTczMTAwMDAwMDAxIiwibmFtZSI6IlVzdWFyaW8gUmVhbCBGaXJlc3RvcmUiLCJleHAiOjE3NTQxMDY0MDN9.elL38WwPaASdkcFhHAZbWYa1X0V5ccOsuYJZWTzBZ7c`
+   - `jwt_token`: `YOUR_GENERATED_JWT_TOKEN_HERE`
    - `session_id`: `test-session-12345`
 
 ---
